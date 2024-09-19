@@ -43,7 +43,7 @@ export default defineComponent({
               {{
                 trigger: () => (
                   <>
-                    <n-button circle ghost tag="a" href="/about" class="c-button">
+                    <n-button circle ghost tag="a" href="#" class="c-button">
                       <i class="i-tabler-info-circle text-5"></i>
                     </n-button>
                   </>
