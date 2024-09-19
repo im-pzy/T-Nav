@@ -1,0 +1,21 @@
+/* 遵循父类元素的宽度*/
+.decoration-none {
+  .tool-card {
+    &:hover {
+      border-color: var(--n-color-target);
+      // 阴影突出 灰色 0.1
+      box-shadow: 2px 2px 20px var(--n-color-target);
+    }
+  }
+  .description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .tags{
+    border-top: 1px solid rgba(136, 136, 136, 0.2);
+  }
+  .default-logo {
+    background-color: var(--logo-bg);
+  }
+}
