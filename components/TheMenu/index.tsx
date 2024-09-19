@@ -38,7 +38,7 @@ export default defineComponent({
     const menuOptions = computed(() => {
       return props.modelValue.map((item) => {
         // 判断item的icon是否为url or path
-        const isIcon = item.icon?.startsWith('http') || item.icon?.startsWith('/')
+        const isIcon = item.icon?.startsWith('http') || item.icon?.startsWith('/') || item.icon?.startsWith('data:image')
         const defaultIcon = item.icon ? item.icon : 'i-tabler-layout-grid-filled'
         return {
           key: item.title,

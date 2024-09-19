@@ -14,7 +14,7 @@ export default defineComponent({
     const model = props.modelValue
 
     const isDefaultLogo = computed(() => model.logo === null || model.logo === undefined)
-    const isPathIcon = computed(() => model.logo && (model.logo.startsWith('/') || model.logo.startsWith('http')))
+    const isPathIcon = computed(() => model.logo && (model.logo.startsWith('/') || model.logo.startsWith('http') || model.logo.startsWith('data:image')))
     const isIcon = computed(() => model.logo && !isPathIcon.value)
 
     const logo = computed(() => {
