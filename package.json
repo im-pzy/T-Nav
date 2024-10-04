@@ -18,16 +18,16 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
     "@bg-dev/nuxt-naiveui": "2.0.0-rc.1",
-    "@iconify-json/logos": "^1.2.0",
-    "@iconify-json/tabler": "^1.2.3",
+    "@iconify-json/logos": "^1.2.1",
+    "@iconify-json/tabler": "^1.2.4",
     "@nuxtjs/robots": "^4.1.7",
-    "@nuxtjs/sitemap": "^6.1.0",
-    "@unocss/nuxt": "^0.62.4",
+    "@nuxtjs/sitemap": "^6.1.1",
+    "@unocss/nuxt": "^0.63.1",
     "@vueuse/nuxt": "^11.1.0",
     "eslint": "^9.11.1",
     "eslint-plugin-format": "^0.1.2",
-    "sass": "^1.79.3",
-    "unocss": "^0.62.4",
+    "sass": "^1.79.4",
+    "unocss": "^0.63.1",
     "vite-plugin-remove-console": "^2.2.0"
   },
   "volta": {
