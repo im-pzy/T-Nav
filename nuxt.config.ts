@@ -51,6 +51,13 @@ export default defineNuxtConfig({
     ssrHandlers: true,
   },
   vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
     plugins: [
       removeConsole(),
     ],
