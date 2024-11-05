@@ -12,12 +12,12 @@
     "lint:fix": "eslint --flag unstable_ts_config --fix"
   },
   "dependencies": {
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.14.0",
     "vue": "latest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
-    "@bg-dev/nuxt-naiveui": "2.0.0-rc.2",
+    "@bg-dev/nuxt-naiveui": "2.0.0-rc.1",
     "@iconify-json/logos": "^1.2.3",
     "@iconify-json/tabler": "^1.2.7",
     "@nuxtjs/robots": "^4.1.10",
