@@ -65,7 +65,7 @@ export default defineComponent({
                       target="_blank"
                       class="c-button"
                     >
-                      <i class="i-tabler-brand-github-filled text-5"></i>
+                      <i class="i-tabler-brand-github text-5"></i>
                     </n-button>
                   </>
                 ),
