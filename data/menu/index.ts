@@ -34,6 +34,10 @@ interface MenuItem {
    */
   description?: string
   /**
+   * 是否废弃
+   */
+  deprecated?: boolean
+  /**
    *
    */
   children?: MenuItem[]

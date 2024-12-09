@@ -1,5 +1,5 @@
-import DefaultLogo from '~/assets/imgs/site/header-logo.png'
 import type { MenuItem } from '~/data/menu'
+import DefaultLogo from '~/assets/imgs/site/header-logo.png'
 import styles from './index.module.scss'
 
 export default defineComponent({
@@ -16,6 +16,7 @@ export default defineComponent({
     const isDefaultLogo = computed(() => model.logo === null || model.logo === undefined)
     const isPathIcon = computed(() => model.logo && (model.logo.startsWith('/') || model.logo.startsWith('http') || model.logo.startsWith('data:image')))
     const isIcon = computed(() => model.logo && !isPathIcon.value)
+    const isDeprecated = computed(() => model.deprecated)
 
     const logo = computed(() => {
       if (isIcon.value) {
@@ -37,7 +38,7 @@ export default defineComponent({
     })
     return () => (
       <>
-        <nuxt-link id={model.title} to={model.url} target="_blank" class={styles['decoration-none']}>
+        <nuxt-link id={model.title} to={isDeprecated.value ? '' : model.url} target="_blank" class={[styles['decoration-none'], isDeprecated.value && 'grayscale']}>
           <n-card hoverable class={['w-full', styles['tool-card']]} border="rounded-2">
             <n-tooltip placement="bottom" trigger="" width="trigger">
               {{
@@ -49,7 +50,7 @@ export default defineComponent({
                           {logo.value}
                         </div>
                         <div class="flex-1 flex flex-col  justify-center ml-4">
-                          <div class="text-lg font-bold text-gray-700 truncate overflow-hidden" color="$n-text-color">
+                          <div class={[['text-lg font-bold text-gray-700 truncate overflow-hidden'], isDeprecated.value && 'line-through']} color="$n-text-color">
                             {model.title}
                           </div>
                           <div class={[styles.description, 'text-sm text-gray-500 mt-2 text-clip overflow-hidden']}>
