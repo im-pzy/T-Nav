@@ -40,6 +40,7 @@ export default {
     {
       title: '韩小韩API',
       url: 'https://api.vvhan.com/',
+      logo: 'https://api.vvhan.com/static/images/logo.webp',
       description: '韩小韩API 致力于为开发者提供便捷、免费、稳定、快速的免费Web API数据接口服务',
       tags: ['api', '接口', '免费'],
     },
