@@ -48,5 +48,12 @@ export default {
       description: 'VueUse 是基于 Composition API 的实用函数集合',
       tags: ['web', 'vue', '前端', '工具'],
     },
+    {
+      title:"PlusProComponents",
+      url:"https://github.com/plus-pro-components/plus-pro-components",
+      logo:"https://plus-pro-components.com/logo.png",
+      description:"基于vue3.2和element-plus构建。页面级别的前端组件库，提供了一些常用的页面级别的组件，比如表格，表单，弹窗，树形控件等。",
+      tags:["web", "vue", "前端", "ui", "element-plus"]
+    }
   ],
 } as MenuItem
