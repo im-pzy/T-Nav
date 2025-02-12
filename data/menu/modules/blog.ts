@@ -55,5 +55,19 @@ export default {
       description: '美团技术团队官方博客',
       tags: ['美团', '博客', '技术团队', '技术博客'],
     },
+    {
+      title:"电鸭社区",
+      url:"https://eleduck.com/",
+      logo:"https://static.eleduck.com/_next/static/media/icon-500.d77f6cfc.png",
+      description:"电鸭社区是具有8年历史的远程工作招聘社区，也是远程办公互联网工作者们的聚集地。在社区，我们进行有价值的话题讨论，也分享远程、外包、零活、兼职、驻场等非主流工作机会。「只工作，不上班」是我们倡导的工作态度。",
+      tags:["电鸭", "社区", "远程工作", "招聘"]
+    },
+    {
+      title:"轻松游牧-",
+      url:"https://easynomad.cn/",
+      logo:"https://easynomad.cn/favicon.ico",
+      description:"轻松游牧是一个远程工作聚合平台，收录了多个论坛和社交媒体上的远程招聘信息，包括全职和兼职，都是支持国内远程的岗位。同时，你也能轻松地在这里找到大量支持国内远程的公司的信息。找远程工作，上轻松游牧就对了。",
+      tags:["轻松游牧", "远程工作", "招聘"]
+    }
   ],
 } as MenuItem
