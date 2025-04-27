@@ -2,6 +2,7 @@ import type { MenuItem } from '..'
 import AILogo from '~/assets/imgs/ai/ai-logo.png'
 import ChatGPTLogo from '~/assets/imgs/ai/chatgpt-logo.png'
 import MidjourneyLogo from '~/assets/imgs/ai/midjourney-logo.png'
+import Modelscope from '~/assets/imgs/ai/modelscope-logo.png'
 
 export default {
   title: 'AI',
@@ -40,7 +41,15 @@ export default {
       logo: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg',
       url: 'https://huggingface.co',
       description: 'Hugging Face 是一个开源的人工智能平台，它可以帮助你快速生成代码，让你的工作更加高效 | Hugging Face',
-      tags: ['chat', 'ai', '人工智能', 'chatgpt'],
+      tags: ['chat', 'ai', '人工智能', 'chatgpt', '模型'],
+    },
+    {
+      title: 'ModelScope 魔搭社区',
+      logo: Modelscope,
+      url: 'https://www.modelscope.cn/mcp',
+      description: 'ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。',
+      tags: ['ai', '人工智能', '社区', 'mcp', '模型'],
+
     },
   ],
 } as MenuItem
