@@ -60,7 +60,7 @@ export default defineComponent({
                       </div>
                       { model.tags && model.tags.length > 0 && (
                         <>
-                          <div class={[' w-full mt-4 text-sm text-gray-500 flex gap-1 flex-wrap  pt-2', styles.tags]}>
+                          <div class={['w-full mt-4 text-sm text-gray-500 flex gap-1   pt-2 overflow-hidden', styles.tags]}>
                             { model.tags.map(tag => (
                               <>
                                 <n-button
