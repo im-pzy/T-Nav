@@ -10,7 +10,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const { isSmallScreen, navCollapse } = useGlobal()
+    const { isSmallScreen, toggleNavCollapse } = useGlobal()
     const requestUrl = useRequestURL()
     // 是否为首页
     const index = computed(() => requestUrl.pathname === '/')
@@ -35,9 +35,9 @@ export default defineComponent({
         })
       }
       // 判断是否移动端，如果是移动端跳转则自动收缩menu
-      if (isSmallScreen) {
+      if (isSmallScreen.value) {
         console.log('isSmallScreen', isSmallScreen.value)
-        navCollapse.value = !navCollapse.value
+        toggleNavCollapse()
       }
     }
 
