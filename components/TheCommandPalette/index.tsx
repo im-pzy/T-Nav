@@ -1,5 +1,5 @@
-import { useCommandPalette } from '~/composables/useCommandPalette'
 import type { MenuItem } from '~/data/menu'
+import { useCommandPalette } from '~/composables/useCommandPalette'
 import menuDataList from '~/data/menu'
 
 export default defineComponent({
@@ -75,6 +75,11 @@ export default defineComponent({
     watch(commandActive, () => {
       isModalOpen.value = true
     })
+
+    watch(isModalOpen, () => {
+      if (!isModalOpen.value)
+        searchPattern.value = ''
+    })
     return () => (
       <>
         <div class="flex items-center gap-1 flex-1">
@@ -89,7 +94,7 @@ export default defineComponent({
             <n-modal
               display-directive="if"
               show={isModalOpen.value}
-              class="w-120 m-t-20"
+              class="w-screen-md m-t-20"
               onAfterLeave={() => isModalOpen.value = false}
               onUpdateShow={(value: boolean) => isModalOpen.value = value}
             >
