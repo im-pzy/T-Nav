@@ -36,7 +36,6 @@ export default defineComponent({
       }
       // 判断是否移动端，如果是移动端跳转则自动收缩menu
       if (isSmallScreen.value) {
-        console.log('isSmallScreen', isSmallScreen.value)
         toggleNavCollapse()
       }
     }

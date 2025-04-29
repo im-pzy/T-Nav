@@ -34,11 +34,11 @@ export default {
       tags: ['工具', 'frp', '内网穿透'],
     },
     {
-      title:"PDF百宝箱",
-      url:"https://pdf.aolifu.org/",
-      logo:"https://pdf.aolifu.org/favicon.ico",
-      description:"PDF百宝箱是一个在线PDF工具箱，提供PDF文件的合并、分割、加密、解密、压缩、解压缩、转换、编辑、加水印、提取图片、提取文字、OCR识别等功能。",
-      tags:["PDF", "工具", "在线工具"]
+      title: 'PDF百宝箱',
+      url: 'https://pdf.aolifu.org/',
+      logo: 'https://pdf.aolifu.org/favicon.ico',
+      description: 'PDF百宝箱是一个在线PDF工具箱，提供PDF文件的合并、分割、加密、解密、压缩、解压缩、转换、编辑、加水印、提取图片、提取文字、OCR识别等功能。',
+      tags: ['PDF', '工具', '在线工具'],
     },
   ],
 

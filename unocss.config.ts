@@ -39,6 +39,6 @@ export default defineConfig({
     'i-tabler-device-tv',
     'i-tabler-video',
     'i-tabler-tool',
-    'i-tabler-photo'
+    'i-tabler-photo',
   ],
 })

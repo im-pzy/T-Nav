@@ -1,6 +1,5 @@
 import type { MenuItem } from '..'
 import NextLogo from '@/assets/imgs/react/nextjs-logo.png'
-import ReactLogo from '@/assets/imgs/react/react-logo.png'
 import ReactRouterLogo from '@/assets/imgs/react/react-router-logo.png'
 import ReduxLogo from '@/assets/imgs/react/redux-logo.png'
 
