@@ -17,7 +17,7 @@ export default defineComponent({
           <div id={item.title} key={item.title} class="m-b-17">
             <h3 class="mb-4 text-2xl font-bold">{item.title}</h3>
             <div class="grid grid-cols-1 gap-[12px] lg:grid-cols-4">
-              {item.children?.map(tool => (
+              {item.children?.filter(tool => !tool.deprecated).map(tool => (
                 <ToolCard modelValue={tool} key={tool.title} />
               ))}
             </div>
