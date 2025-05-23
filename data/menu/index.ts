@@ -10,6 +10,7 @@ import OnlineMovie from './modules/online-movie'
 import React from './modules/react'
 import tools from './modules/tools'
 import Vue from './modules/vue'
+import efficiency from './modules/efficiency'
 
 interface MenuItem {
   /**
@@ -48,6 +49,7 @@ interface MenuItem {
 }
 
 const menuDataList: MenuItem[] = [
+  efficiency,
   ai,
   Frontend,
   Vue,
