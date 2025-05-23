@@ -1,15 +1,4 @@
-import ai from './modules/ai'
-import Backend from './modules/backend'
-import Blog from './modules/blog'
-import Developed from './modules/developed'
-import freeApi from './modules/freeApi'
-import Frontend from './modules/frontend'
-import Images from './modules/images'
-import movieCollection from './modules/movie-collection'
-import OnlineMovie from './modules/online-movie'
-import React from './modules/react'
-import tools from './modules/tools'
-import Vue from './modules/vue'
+import develop from './modules/develop'
 import efficiency from './modules/efficiency'
 
 interface MenuItem {
@@ -50,18 +39,7 @@ interface MenuItem {
 
 const menuDataList: MenuItem[] = [
   efficiency,
-  ai,
-  Frontend,
-  Vue,
-  React,
-  Backend,
-  freeApi,
-  Blog,
-  Developed,
-  OnlineMovie,
-  movieCollection,
-  tools,
-  Images,
+  develop,
 ]
 
 export type { MenuItem }
